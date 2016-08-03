@@ -98,6 +98,10 @@ type constraint:
 data Ord a => Interval a = Interval (EndPoint a, Bool) (Endpoint a, Bool)
 ```
 
+## Why?
+
+[TweetDeck](https://tweetdeck.twitter.com) uses this library to manage lists of many kinds of data (we call them chirps). With it we detect overlapping blocks of Tweets, gaps and do neat memory management optimisations.
+
 ## Development
 
 ```
