@@ -10,6 +10,7 @@
     "babel-runtime": "^6.11.6"
   },
   "devDependencies": {
+    "ava": "^0.15.2",
     "babel-cli": "^6.11.4",
     "babel-core": "^6.11.4",
     "babel-plugin-add-module-exports": "^0.2.1",
@@ -24,7 +25,7 @@
     "xo": "^0.16.0"
   },
   "scripts": {
-    "test": "xo && NODE_ENV=test babel-node index.js",
+    "test": "xo && ava",
     "dist": "NODE_ENV=production babel index.js --source-maps --out-file out.js",
     "prepublish": "npm run dist",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
