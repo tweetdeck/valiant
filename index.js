@@ -1,4 +1,4 @@
-export default function createInterval(compareValues) {
+export function createInterval(compareValues) {
   function Interval(from, to) {
     if (!from || !to) {
       throw new Error('Interval: missing from/to endpoint(s)');
